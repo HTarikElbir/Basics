@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model Course
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,5 +7,7 @@
 </head>
 <body>
     <h1>Course Index Page</h1>
+    <p>Course ID: @Model.Id</p>
+    <p>Course Name: @Model.Title</p>
 </body>
 </html>
