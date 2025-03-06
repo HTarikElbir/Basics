@@ -11,6 +11,8 @@ namespace Basics.Controllers
             
             course.Id = 1;
             course.Title = "ASP.NET Core MVC";
+            course.Description = "Great course";
+            course.Image = "ASP.NET.webp";
 
             return View(course);
         }

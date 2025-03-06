@@ -4,10 +4,44 @@
 <head>
     <title></title>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 <body>
-    <h1>Course Index Page</h1>
-    <p>Course ID: @Model.Id</p>
-    <p>Course Name: @Model.Title</p>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#"> CoursePage</a>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Courses</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-3">
+        <main>
+            <h1>Course Index Page</h1>
+            <div class="card mt-3" id="kurs_@Model.Id">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="~/img/@Model.Image" class="img-fluid rounded-start" width="200" alt="" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"> @Model.Title</h5>
+                            <p class="card-text"> @Model.Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+   
+
 </body>
 </html>
