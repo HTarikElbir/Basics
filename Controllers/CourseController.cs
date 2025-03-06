@@ -19,9 +19,9 @@ namespace Basics.Controllers
         {
             var courses = new List<Course>()
             {
-                new Course { Id = 1, Title = "ASP.NET Core MVC" , Description = "Great course" },
-                new Course { Id = 2, Title = "ASP.NET Core Web API" , Description = "Great course" },
-                new Course { Id = 3, Title = "ASP.NET Core Razor Pages" , Description = "Great course" }
+                new Course { Id = 1, Title = "ASP.NET Core" , Description = "Great course", Image ="ASP.NET.webp" },
+                new Course { Id = 2, Title = "Javascript" , Description = "Great course", Image ="Js.webp" },
+                new Course { Id = 3, Title = "Python" , Description = "Great course", Image ="Python.webp" }
             };
             return View(courses);
         }
