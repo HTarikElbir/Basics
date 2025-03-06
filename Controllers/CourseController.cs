@@ -17,7 +17,13 @@ namespace Basics.Controllers
 
         public IActionResult List()
         {
-            return View();
+            var courses = new List<Course>()
+            {
+                new Course { Id = 1, Title = "ASP.NET Core MVC" , Description = "Great course" },
+                new Course { Id = 2, Title = "ASP.NET Core Web API" , Description = "Great course" },
+                new Course { Id = 3, Title = "ASP.NET Core Razor Pages" , Description = "Great course" }
+            };
+            return View(courses);
         }
     }
 }
