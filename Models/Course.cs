@@ -1,5 +1,6 @@
 ﻿namespace Basics.Models
 {
+    // Represents a course with an ID, title, image, and description
     public class Course
     {
         public int Id { get; set; }

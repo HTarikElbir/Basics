@@ -1,0 +1,18 @@
+﻿@model Course
+
+<div class="card mt-3" id="kurs_@Model.Id">
+    <div class="row">
+        <div class="col-md-4">
+            <!-- Display course image -->
+            <img src="~/img/@Model.Image" class="img-fluid rounded-start" width="200" alt="" />
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <!-- Display course title -->
+                <h5 class="card-title"> @Model.Title</h5>
+                <!-- Display course description -->
+                <p class="card-text"> @Model.Description</p>
+            </div>
+        </div>
+    </div>
+</div>
