@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-       @await Html.PartialAsync("_Navbar");
+       @await Html.PartialAsync("_Navbar")
+       @RenderSection("Header", false)
     </header>
     <div class="container mt-3">
         <main>
             <!-- Render the body of the page -->
             @RenderBody()
         </main>
-
     </div>
 
 
