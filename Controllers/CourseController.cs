@@ -32,5 +32,19 @@ namespace Basics.Controllers
             // Return the list of courses to the view
             return View(courses);
         }
+        public IActionResult Details()
+        {
+            // Create a new course instance
+            Course course = new Course();
+
+            // Set course properties
+            course.Id = 1;
+            course.Title = "ASP.NET Core MVC";
+            course.Description = "Great course";
+            course.Image = "ASP.NET.webp";
+
+            // Return the course to the view
+            return View(course);
+        }
     }
 }

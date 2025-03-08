@@ -8,8 +8,10 @@
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <!-- Display course title -->
-                <h5 class="card-title"> @Model.Title</h5>
+                <a asp-controller="Course" asp-action="Details" asp-route-id="@Model.Id">
+                    <!-- Display course title -->
+                    <h5 class="card-title"> @Model.Title</h5>
+                </a>
                 <!-- Display course description -->
                 <p class="card-text"> @Model.Description</p>
             </div>
